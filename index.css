@@ -1,3 +1,41 @@
+body{
+    background-color: rgb(4, 5, 19);
+}
 h1{
     color: aqua;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 40px;
+    background: rgba( 255, 247, 247, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    
+     border-radius: 10px;
+    /* background-image: linear-gradient(red,blue); */
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 200px;
+    height: 200px;
+
+    transform-style: preserve-3d;
+    /* transform: perspective(1000px);
+    transform: translatez(50px); */
+
+
+}
+.in{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translatez(100px);
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+
+
+
 }
