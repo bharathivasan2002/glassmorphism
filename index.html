@@ -7,25 +7,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-  
-    <div class="box"  > <div class="in"></div> </div>
+<body >
+     <div class="container">
+        
+        
+         <div class="card">
+           <img src="/images/pngkey.com-cute-anime-girl-png-7031506.png" alt="">
+            <h2>Naomi</h2>
 
+         </div>
+     </div>
 
-   
-<script type="text/javascript" src="vanilla-tilt.js"></script>
-<script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".box"), {
-		max: 25,
-		speed: 400,
-        glare: 1,
-        "max-glare": 0.4,
-        // scale: 1.1,
-        // startX:   20,
-        // starty:   20
-	});
-	
-	
-</script>
+     <script type="text/javascript" src="vanilla-tilt.js"></script>
+     <script type="text/javascript">
+         VanillaTilt.init(document.querySelector(".card"), {
+             max: 25,
+             speed: 400,
+             gyroscope:             true,  
+             gyroscopeMinAngleX:     -45,    
+             gyroscopeMaxAngleX:     45,     
+             gyroscopeMinAngleY:     -45,    
+             gyroscopeMaxAngleY:     45,    
+             glare:                  true,
+            "max-glare":            0.5,      
+             
+         });
+         
+        
+     </script>
 </body>
 </html>

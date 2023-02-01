@@ -1,41 +1,57 @@
-body{
-    background-color: rgb(4, 5, 19);
-}
-h1{
-    color: aqua;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
 
-.box{
+
+body{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
-    font-size: 40px;
-    background: rgba( 255, 247, 247, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    
-     border-radius: 10px;
-    /* background-image: linear-gradient(red,blue); */
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 200px;
-    height: 200px;
-
-    transform-style: preserve-3d;
-    /* transform: perspective(1000px);
-    transform: translatez(50px); */
-
-
+    background-color:#131313;
 }
-.in{
+
+.container .card{
+    width: 350px;
+    height:500px;
+    background: rgba(255, 255, 255, 0.068);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-top: 1px solid rgba( 255, 255, 255, 0.18 ) ;
+    border-right: 1px solid rgba( 255, 255, 255, 0.18 ) ;
+    transform-style: preserve-3d;
+}
+
+.card img{
+    width: 350px;
+    height: 450px;
+    filter:drop-shadow(15px 15px 5px rgb(10, 10, 10)) ;
+    transition: 0.5s;
+  
+}
+.card:hover img{
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    transform: translatez(100px);
-    background-color: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
+    transform: translateZ(100px);
+}
 
+   
 
-
+.card h2{
+    color:#4d4b4b;
+    letter-spacing: 20px;
+    font-variant: small-caps;
+    margin-left: 90px;
+    margin-top: 5px;
+    transition: 0.5s;
+    
+}
+.card:hover h2{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(100px);
 }
